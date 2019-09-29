@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,8 +23,7 @@ import com.google.firebase.auth.FirebaseUser;
 public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
-
-
+    Context mcontext;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,8 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText log_email = findViewById(R.id.register_email);
         final EditText log_password = findViewById(R.id.register_password);
         Button signup = findViewById(R.id.register_signup_btn);
+        final RadioButton rb  = findViewById(R.id.radioButton);
+        mcontext=RegisterActivity.this;
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,31 +47,24 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = log_password.getText().toString();
 
                 mAuth.createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
+
                                 if (task.isSuccessful()) {
-                                    // Sign in success, update UI with the signed-in user's information
-                                   // Log.d(TAG, "createUserWithEmail:success");
-                                    FirebaseUser user = mAuth.getCurrentUser();
-                                   // updateUI(user);
 
-                                    // Write a message to the database
-
-
-                                    Toast.makeText(RegisterActivity.this, "Created account.", Toast.LENGTH_SHORT).show();
-                                    Intent loginIntent = new Intent(getApplicationContext(), MainActivity.class);
-                                    startActivity(loginIntent);
-
-
-                                    if(STUDENT){
-                                        Intent completeIntent = new Intent(getApplicationContext(), CompleteProfileActivity.class);
+                                    if(rb.isSelected()){
+                                        Intent tIntent = new Intent(mcontext, TeacherActivity.class);
+                                        startActivity(tIntent);
+                                    }
+                                    else{
+                                        Intent completeIntent = new Intent(mcontext, CompleteProfileActivity.class);
                                         startActivity(completeIntent);
                                     }
 
 
                                 } else {
-                                    Toast.makeText(RegisterActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(mcontext, "Authentication failed.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });

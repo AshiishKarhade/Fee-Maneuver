@@ -10,31 +10,28 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-Button b1=findViewById(R.id.bt1);
-Button b2=findViewById(R.id.bt2);
-TextView tv=findViewById(R.id.tv1);
-Context mcontext;
+
+    Context mcontext;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // private FirebaseAuth mAuth;
+        Button b1=findViewById(R.id.bt1);
+        TextView tv=findViewById(R.id.tv1);
+        mcontext = MainActivity.this;
+
         b1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(mcontext, StudentActivity.class);
+            Intent intent=new Intent(mcontext, LoginActivity.class);
             startActivity(intent);
             }
         });
 
-        b2.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent1=new Intent(mcontext, TeacherActivity.class);
-            startActivity(intent1);
-            }
-        });
 
         tv.setOnClickListener(new View.OnClickListener() {
         @Override

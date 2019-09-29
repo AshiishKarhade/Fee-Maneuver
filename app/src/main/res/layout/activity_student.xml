@@ -17,7 +17,7 @@
         android:textSize="24dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="110dp"
-        android:id="@+id/fee"
+        android:id="@+id/student_name"
         android:textColor="@color/colorPrimaryDark">
     </TextView>
 
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="NETT.FEE"
-        android:layout_below="@id/fee"
+        android:layout_below="@id/student_name"
         android:id="@+id/ntf"
         android:textSize="24dp"
         android:layout_marginLeft="50dp"

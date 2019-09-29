@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/f5cee04665f635392fbc3a078a89e818/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/85e257a6babe96d3b8085bcd76499598/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6d16290c97378708d50718ed6ea0b1c0/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
@@ -46,25 +46,31 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/ashishkarhade/.gra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/67688366c6a6c762e55784305fcbc09b/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/f5e5093a6d2ffb564f346d2769a020dc/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/c92e9c6549150a4bd8eb347f54ac769d/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
+INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
 	package
 		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:3:5-32
 		INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
 		INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:1-47:12
 		INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:4:5-5:23
+MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:5:5-27:19
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:7:5-45:19
 MERGED from [com.google.android.material:material:1.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/f5cee04665f635392fbc3a078a89e818/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/f5cee04665f635392fbc3a078a89e818/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6d16290c97378708d50718ed6ea0b1c0/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -88,47 +94,71 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/ashi
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/241b89e013db22b59a4d22b3f2fa0913/core-1.0.1/AndroidManifest.xml:22:18-86
 	android:supportsRtl
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:9:9-54
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:11:9-40
-activity#com.example.fees2.CompleteProfileActivity
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:12:9-15:68
-	android:label
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:14:13-68
-	android:theme
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:13-56
-	android:name
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:13:13-52
-activity#com.example.fees2.LoginActivity
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:16:9-19:59
-	android:label
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:18:13-57
-	android:theme
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:19:13-56
-	android:name
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:13-42
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:13:9-40
 activity#com.example.fees2.MainActivity
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:20:9-26:20
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:9-21:20
 	android:name
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:19:27-74
+activity#com.example.fees2.CompleteProfileActivity
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:23:9-26:68
+	android:label
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:25:13-68
+	android:theme
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:26:13-56
+	android:name
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:24:13-52
+activity#com.example.fees2.LoginActivity
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:27:9-30:59
+	android:label
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:29:13-57
+	android:theme
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:28:13-42
+activity#com.example.fees2.TeacherActivity
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:31:9-34:59
+	android:label
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:33:13-43
+	android:theme
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:34:13-56
+	android:name
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:32:13-44
+activity#com.example.fees2.StudentActivity
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:35:9-38:59
+	android:label
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:37:13-43
+	android:theme
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:38:13-56
+	android:name
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:36:13-44
+activity#com.example.fees2.RegisterActivity
+ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:40:9-43:59
+	android:label
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:42:13-45
+	android:theme
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:43:13-56
+	android:name
+		ADDED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:41:13-45
 uses-sdk
 INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
@@ -259,10 +289,6 @@ uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from [com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:22-76
-uses-permission#android.permission.INTERNET
-ADDED from [com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:5-67
-	android:name
-		ADDED from [com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:23:22-64
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
 	android:exported

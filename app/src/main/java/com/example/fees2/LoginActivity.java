@@ -17,6 +17,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -30,37 +31,38 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        EditText log_email = findViewById(R.id.login_email);
-        EditText log_password = findViewById(R.id.login_password);
+        final EditText log_email = findViewById(R.id.login_email);
+        final EditText log_password = findViewById(R.id.login_password);
         Button login = findViewById(R.id.login_login_btn);
+        final RadioButton rb  = findViewById(R.id.log_radioButton);
 
 
 
-        String email = log_email.getText().toString();
-        String password = log_password.getText().toString();
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = log_email.getText().toString();
+                String password = log_password.getText().toString();
 
-        mAuth.signInWithEmailAndPassword(email, password)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                           // Log.d(TAG, "signInWithEmail:success");
-                            //FirebaseUser user = mAuth.getCurrentUser();
-                            //updateUI(user);
+                mAuth.signInWithEmailAndPassword(email, password)
+                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if (task.isSuccessful()) {
+                                    if(rb.isSelected()){
+                                        teacherLogin();
+                                    }
+                                    else{
+                                        studentLogin();
+                                    }
 
-                            /*if(STUDENT){
-                                studentLogin();
+                                } else {
+                                    Toast.makeText(LoginActivity.this, "Authentication failed.",Toast.LENGTH_SHORT).show();
+                                }
                             }
-                            if(TEACHER){
-                                teacherLogin();
-                            }
-*/
-                        } else {
-                                Toast.makeText(LoginActivity.this, "Authentication failed.",Toast.LENGTH_SHORT).show();
-                            }
-                    }
-                });
+                        });
+            }
+        });
 
 
 
