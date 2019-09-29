@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -23,6 +24,8 @@ import java.util.HashMap;
 
 public class CompleteProfileActivity extends AppCompatActivity {
 
+    FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,8 @@ public class CompleteProfileActivity extends AppCompatActivity {
         final EditText comp_caste = findViewById(R.id.comp_caste);
         Button comp_button = findViewById(R.id.comp_button);
 
+        final String userID = mAuth.getCurrentUser().getUid();
+
         comp_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,17 +49,25 @@ public class CompleteProfileActivity extends AppCompatActivity {
                 String name = comp_name.getText().toString();
                 String year = comp_year.getText().toString();
                 String caste = comp_caste.getText().toString();
+                int totalFee = getTotalFee();
 
 
                 Student user = new Student(name, year, caste);
 
-                myRef.setValue(user);
+                myRef.child(userID).setValue(user);
 
                 updateView();
             }
         });
 
 
+    }
+
+    private int getTotalFee() {
+        int fee = 0;
+
+
+        return fee;
     }
 
     public void updateView(){

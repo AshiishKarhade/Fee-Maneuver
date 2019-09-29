@@ -4,15 +4,37 @@ public class Student {
     public String name;
     public String year;
     public String caste;
+    public int totalFees;
+    public int remainingFees;
+
 
     public Student(String name, String year, String caste) {
         this.name = name;
         this.year = year;
         this.caste = caste;
+        this.totalFees = totalFees;
+        this.remainingFees = remainingFees;
+
     }
 
     public Student(){
 
+    }
+
+    public int getTotalFees() {
+        return totalFees;
+    }
+
+    public void setTotalFees(int totalFees) {
+        this.totalFees = totalFees;
+    }
+
+    public int getRemainingFees() {
+        return remainingFees;
+    }
+
+    public void setRemainingFees(int remainingFees) {
+        this.remainingFees = remainingFees;
     }
 
     public String getName() {
@@ -45,6 +67,8 @@ public class Student {
                 "name='" + name + '\'' +
                 ", year='" + year + '\'' +
                 ", caste='" + caste + '\'' +
+                ", totalFees=" + totalFees +
+                ", remainingFees=" + remainingFees +
                 '}';
     }
 }
