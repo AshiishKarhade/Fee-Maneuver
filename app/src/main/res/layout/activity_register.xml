@@ -10,45 +10,52 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img1"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginLeft="160dp"
         android:layout_marginTop="150dp"
-        android:id="@+id/img1"
         android:src="@mipmap/ic_circle">
 
     </androidx.appcompat.widget.AppCompatImageView>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/img1"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:hint="Email"
+        android:layout_centerHorizontal="true"
         android:inputType="textEmailAddress"
         android:gravity="center"
-        android:id="@+id/ed1">
+        android:id="@+id/register_email">
 
     </EditText>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ed1"
-        android:hint="password"
-        android:inputType="textVisiblePassword"
-        android:layout_marginTop="15dp"
+        android:layout_below="@id/register_email"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
         android:gravity="center"
-        android:id="@+id/ed2">
-
+        android:id="@+id/register_password">
     </EditText>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_below="@id/ed2"
-        android:text="click"></Button>
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/register_password"
+        android:text="Sign up"
+        android:id="@+id/register_signup_btn">
+
+    </Button>
 
 </RelativeLayout>
 </LinearLayout>

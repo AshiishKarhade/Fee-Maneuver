@@ -14,37 +14,35 @@ Button b1=findViewById(R.id.bt1);
 Button b2=findViewById(R.id.bt2);
 TextView tv=findViewById(R.id.tv1);
 Context mcontext;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-    b1.setOnClickListener(new View.OnClickListener() {
+        b1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent intent=new Intent(mcontext,Studenfirst.class);
-        }
-    });
+            Intent intent=new Intent(mcontext, StudentActivity.class);
+            startActivity(intent);
+            }
+        });
 
+        b2.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent1=new Intent(mcontext, TeacherActivity.class);
+            startActivity(intent1);
+            }
+        });
 
-    b2.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent intent1=new Intent(mcontext,Teacherfirst.class);
-    }
-});
-
-
-
-
-    tv.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-        Intent intent3=new Intent(mcontext,register.class);
-    }
-});
+        tv.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent intent3=new Intent(mcontext, RegisterActivity.class);
+            startActivity(intent3);
+            }
+        });
 
 
     }
