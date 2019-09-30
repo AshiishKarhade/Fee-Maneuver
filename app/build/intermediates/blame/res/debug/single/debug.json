@@ -736,6 +736,10 @@
         "source": "/Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/85e257a6babe96d3b8085bcd76499598/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/drawable-v24_logo2.png.flat",
+        "source": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/res/drawable-v24/logo2.png"
+    },
+    {
         "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
         "source": "/Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/85e257a6babe96d3b8085bcd76499598/appcompat-1.0.2/res/anim/abc_popup_exit.xml"
     },
@@ -874,6 +878,10 @@
     {
         "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/anim_abc_slide_in_top.xml.flat",
         "source": "/Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/85e257a6babe96d3b8085bcd76499598/appcompat-1.0.2/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/drawable-v24_nature.jpg.flat",
+        "source": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/res/drawable-v24/nature.jpg"
     },
     {
         "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat",
@@ -2210,6 +2218,10 @@
     {
         "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/85e257a6babe96d3b8085bcd76499598/appcompat-1.0.2/res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/layout_activity_update_fees.xml.flat",
+        "source": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/res/layout/activity_update_fees.xml"
     },
     {
         "merged": "/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/build/intermediates/res/merged/debug/drawable-v21_design_password_eye.xml.flat",

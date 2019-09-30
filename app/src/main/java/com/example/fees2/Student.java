@@ -8,7 +8,7 @@ public class Student {
     public int remainingFees;
 
 
-    public Student(String name, String year, String caste) {
+    public Student(String name, String year, String caste, int totalFees, int remainingFees) {
         this.name = name;
         this.year = year;
         this.caste = caste;

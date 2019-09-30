@@ -6,6 +6,7 @@ import android.os.Bundle;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -25,22 +26,23 @@ import java.util.HashMap;
 public class CompleteProfileActivity extends AppCompatActivity {
 
     FirebaseAuth mAuth;
-
+    private FirebaseUser mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_profile);
 
+        final String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("student");
+        //final String userID = mUser.getUid();
 
         final EditText comp_name = findViewById(R.id.comp_name);
         final EditText comp_year = findViewById(R.id.comp_year);
         final EditText comp_caste = findViewById(R.id.comp_caste);
         Button comp_button = findViewById(R.id.comp_button);
-
-        final String userID = mAuth.getCurrentUser().getUid();
 
         comp_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,25 +50,36 @@ public class CompleteProfileActivity extends AppCompatActivity {
 
                 String name = comp_name.getText().toString();
                 String year = comp_year.getText().toString();
-                String caste = comp_caste.getText().toString();
-                int totalFee = getTotalFee();
+                String caste = comp_caste.getText().toString().toLowerCase();
+                int totalFee = getTotalFee(caste);
+                int remFee = totalFee;
 
-
-                Student user = new Student(name, year, caste);
-
+                Student user = new Student(name, year, caste, totalFee, remFee);
                 myRef.child(userID).setValue(user);
 
                 updateView();
             }
         });
 
-
     }
 
-    private int getTotalFee() {
+    private int getTotalFee(String castee) {
         int fee = 0;
-
-
+        if(castee=="general" || castee=="gen"){
+            fee = 100000;
+        }
+        else if(castee=="oms"){
+            fee = 70000;
+        }
+        else if(castee=="sc"){
+            fee = 11500;
+        }
+        else if(castee=="st"){
+            fee = 10000;
+        }
+        else{
+            fee=0;
+        }
         return fee;
     }
 

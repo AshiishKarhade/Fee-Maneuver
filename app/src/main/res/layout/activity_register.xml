@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 <LinearLayout
@@ -7,64 +8,100 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/img1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="150dp"
-        android:src="@mipmap/ic_circle">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9CD8F3">
 
-    </androidx.appcompat.widget.AppCompatImageView>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/img1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="161dp"
+            android:layout_marginLeft="161dp"
+            android:layout_marginTop="148dp"
+            android:layout_marginEnd="170dp"
+            android:layout_marginRight="170dp"
+            android:src="@drawable/logo2">
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/img1"
-        android:layout_marginTop="60dp"
-        android:hint="Email"
-        android:layout_centerHorizontal="true"
-        android:inputType="textEmailAddress"
-        android:gravity="center"
-        android:id="@+id/register_email">
+        </androidx.appcompat.widget.AppCompatImageView>
 
-    </EditText>
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:inputType="textEmailAddress">
 
-    <EditText
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/register_email"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:id="@+id/register_password">
-    </EditText>
+        </EditText>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/register_password"
-        android:text="Sign up"
-        android:id="@+id/register_signup_btn">
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword">
 
-    </Button>
+        </EditText>
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Teacher"
-        android:layout_marginTop="250dp"
-        android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/register_signup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="Sign up">
 
-</RelativeLayout>
+        </Button>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_signup_btn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-238dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="459dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Teacher          " />
+
+            <RadioButton
+                android:id="@+id/radio_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Student" />
+        </RadioGroup>
+
+    </RelativeLayout>
 </LinearLayout>
 </RelativeLayout>

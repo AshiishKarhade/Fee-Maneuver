@@ -1051,8 +1051,10 @@ drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable logo2
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
+drawable nature
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -1106,7 +1108,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id bt
 id bt1
 id buttonPanel
 id cancel_action
@@ -1178,7 +1179,8 @@ id line1
 id line3
 id listMode
 id list_item
-id log_radioButton
+id log_radio_student
+id log_radio_teacher
 id login_email
 id login_login_btn
 id login_password
@@ -1209,7 +1211,8 @@ id pin
 id progress_circular
 id progress_horizontal
 id radio
-id radioButton
+id radio_student
+id radio_teacher
 id register_email
 id register_password
 id register_signup_btn
@@ -1226,7 +1229,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id search
 id search_badge
 id search_bar
 id search_button
@@ -1260,12 +1262,17 @@ id start
 id status_bar_latest_event_content
 id stretch
 id student_name
+id student_signout
 id submenuarrow
 id submit_area
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id teacher_search
+id teacher_searchbtn
+id teacher_signout
+id teacher_updatebtn
 id text
 id text2
 id textSpacerNoButtons
@@ -1291,6 +1298,12 @@ id tv1
 id uniform
 id unlabeled
 id up
+id update_general_text
+id update_obc_text
+id update_oms_text
+id update_sc_text
+id update_st_text
+id update_updatebtn
 id useLogo
 id view_offset_helper
 id visible
@@ -1352,6 +1365,7 @@ layout activity_main
 layout activity_register
 layout activity_student
 layout activity_teacher
+layout activity_update_fees
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar

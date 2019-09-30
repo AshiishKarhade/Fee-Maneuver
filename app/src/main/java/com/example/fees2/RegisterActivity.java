@@ -25,6 +25,8 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     Context mcontext;
 
+    boolean isTeacher = false;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
         final EditText log_email = findViewById(R.id.register_email);
         final EditText log_password = findViewById(R.id.register_password);
         Button signup = findViewById(R.id.register_signup_btn);
-        final RadioButton rb  = findViewById(R.id.radioButton);
+        final RadioButton rbs  = findViewById(R.id.radio_student);
+        final RadioButton rbt  = findViewById(R.id.radio_teacher);
         mcontext=RegisterActivity.this;
 
         signup.setOnClickListener(new View.OnClickListener() {
@@ -53,13 +56,16 @@ public class RegisterActivity extends AppCompatActivity {
 
                                 if (task.isSuccessful()) {
 
-                                    if(rb.isSelected()){
+                                    Toast.makeText(mcontext, "Authentication Successfull.", Toast.LENGTH_SHORT).show();
+                                    if(isTeacher){
                                         Intent tIntent = new Intent(mcontext, TeacherActivity.class);
                                         startActivity(tIntent);
+                                        finish();
                                     }
                                     else{
                                         Intent completeIntent = new Intent(mcontext, CompleteProfileActivity.class);
                                         startActivity(completeIntent);
+                                        finish();
                                     }
 
 
@@ -73,6 +79,23 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void onRadioButtonClicked(View view) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) view).isChecked();
+
+        // Check which radio button was clicked
+        switch(view.getId()) {
+            case R.id.radio_teacher:
+                if (checked)
+                    isTeacher = true;
+                    break;
+            case R.id.radio_student:
+                if (checked)
+                    isTeacher = false;
+                    break;
+        }
     }
 
 }

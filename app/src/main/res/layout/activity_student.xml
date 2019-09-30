@@ -6,6 +6,21 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="338dp"
+        android:layout_marginRight="338dp"
+        android:text="Name:">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:hint="YOUR NAME"
         android:textSize="24dp"
         android:layout_marginLeft="50dp"
@@ -42,14 +57,34 @@
     </TextView>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="178dp"
         android:layout_height="wrap_content"
-        android:hint="THANK YOU"
         android:layout_below="@id/rmf"
-        android:textSize="35dp"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="55dp"
-        android:layout_centerInParent="true">
+        android:layout_marginTop="99dp"
+        android:gravity="center"
+        android:hint="THANK YOU"
+        android:textSize="20dp">
 
     </TextView>
+
+    <Button
+        android:id="@+id/student_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="-369dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:layout_marginBottom="174dp"
+        android:text="Sign out">
+
+    </Button>
 </RelativeLayout>
