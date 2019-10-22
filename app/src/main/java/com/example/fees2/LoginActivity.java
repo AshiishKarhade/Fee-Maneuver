@@ -18,6 +18,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -39,40 +40,54 @@ public class LoginActivity extends AppCompatActivity {
         final RadioButton rbs  = findViewById(R.id.log_radio_student);
         final RadioButton rbt = findViewById(R.id.log_radio_teacher);
 
+        final ProgressBar mpro = findViewById(R.id.login_progressBar);
+        mpro.setVisibility(View.GONE);
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                mpro.setVisibility(View.VISIBLE);
                 String email = log_email.getText().toString();
                 String password = log_password.getText().toString();
 
-                mAuth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    loginSomewhere();
+                if(email.isEmpty()){
+                    Toast.makeText(LoginActivity.this, "Email cannot be Empty", Toast.LENGTH_SHORT).show();
+                    mpro.setVisibility(View.GONE);
+                }
+                else if(password.isEmpty()){
+                    Toast.makeText(LoginActivity.this, "Password cannot be Empty", Toast.LENGTH_SHORT).show();
+                    mpro.setVisibility(View.GONE);
+                }
+                else {
+                    mAuth.signInWithEmailAndPassword(email, password)
+                            .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        mpro.setVisibility(View.GONE);
+                                        loginSomewhere();
 
-                                } else {
-                                    Toast.makeText(LoginActivity.this, "Authentication failed.",Toast.LENGTH_SHORT).show();
+                                    } else {
+                                        mpro.setVisibility(View.GONE);
+                                        Toast.makeText(LoginActivity.this, "Authentication failed.",Toast.LENGTH_SHORT).show();
+                                    }
                                 }
-                            }
-                        });
+                            });
+                }
             }
         });
-
-
 
     }
 
     public void loginSomewhere(){
         if(isTeacher){
-            Intent teaIntent = new Intent(getApplicationContext(), TeacherActivity.class);
+            Intent teaIntent = new Intent(LoginActivity.this, TeacherActivity.class);
             startActivity(teaIntent);
             finish();
         }
         else{
-            Intent stuIntent = new Intent(getApplicationContext(), StudentActivity.class);
+            Intent stuIntent = new Intent(LoginActivity.this, StudentActivity.class);
             startActivity(stuIntent);
             finish();
         }
@@ -85,11 +100,11 @@ public class LoginActivity extends AppCompatActivity {
 
         // Check which radio button was clicked
         switch(view.getId()) {
-            case R.id.radio_teacher:
+            case R.id.log_radio_teacher:
                 if (checked)
                     isTeacher = true;
                 break;
-            case R.id.radio_student:
+            case R.id.log_radio_student:
                 if (checked)
                     isTeacher = false;
                 break;

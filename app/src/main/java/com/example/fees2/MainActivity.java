@@ -9,7 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+
 public class MainActivity extends AppCompatActivity {
+
+    FirebaseUser mUser = FirebaseAuth.getInstance().getCurrentUser();
 
     Context mcontext;
 
@@ -43,4 +48,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }

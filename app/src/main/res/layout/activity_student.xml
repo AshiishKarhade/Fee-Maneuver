@@ -1,71 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+
+    <RelativeLayout
+        android:id="@+id/stu_rel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginEnd="338dp"
-        android:layout_marginRight="338dp"
-        android:text="Name:">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        android:padding="30dp">
 
-    </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Name:"
+            android:id="@+id/nameee"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_below="@id/nameee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="YOUR NAME"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/student_name"
+            android:text="Net Fee:"
+            android:id="@+id/ntfeee"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/ntf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ntfeee"
+            android:hint="NETT.FEE"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Remaining Fee:"
+            android:id="@+id/rmfeee"
+            android:layout_below="@id/ntf"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/rmf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rmfeee"
+            android:hint="REMAINING FEE"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="381dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="YOUR NAME"
-        android:textSize="24dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="110dp"
-        android:id="@+id/student_name"
-        android:textColor="@color/colorPrimaryDark">
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="NETT.FEE"
-        android:layout_below="@id/student_name"
-        android:id="@+id/ntf"
-        android:textSize="24dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/colorPrimaryDark">
-
-    </TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="REMAINING FEE"
-        android:layout_below="@id/ntf"
-        android:textSize="24dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
-        android:id="@+id/rmf"
-        android:textColor="@color/colorPrimaryDark"
-        >
-
-    </TextView>
-
-    <TextView
+        android:id="@+id/textView"
         android:layout_width="178dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/rmf"
+        android:layout_below="@id/stu_rel"
         android:layout_centerInParent="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="99dp"
         android:gravity="center"
         android:hint="THANK YOU"
-        android:textSize="20dp">
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/student_signout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.922">
 
     </TextView>
 
@@ -78,13 +134,13 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="161dp"
-        android:layout_marginLeft="161dp"
-        android:layout_marginTop="-369dp"
-        android:layout_marginEnd="162dp"
-        android:layout_marginRight="162dp"
-        android:layout_marginBottom="174dp"
-        android:text="Sign out">
+        android:text="Sign out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778">
 
     </Button>
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

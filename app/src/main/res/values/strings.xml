@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fees2</string>
+    <string name="app_name">Fee structure System</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_complete_profile">CompleteProfileActivity</string>
 </resources>

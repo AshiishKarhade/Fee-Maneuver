@@ -11,21 +11,21 @@
 9-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:5:5-83
+11-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:5:5-67
 11-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:5-79
 12-->[com.google.firebase:firebase-database:16.0.4] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/e453b3b384ea746dfb26dd7985ad7805/jetified-firebase-database-16.0.4/AndroidManifest.xml:22:22-76
 13
 14    <application
-14-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:7:5-42:19
+14-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:7:5-45:19
 15        android:allowBackup="true"
 15-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:8:9-35
 16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/241b89e013db22b59a4d22b3f2fa0913/core-1.0.1/AndroidManifest.xml:22:18-86
+16-->[androidx.core:core:1.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/b6b5951a20836cbe843a8e306a5032d5/core-1.1.0/AndroidManifest.xml:24:18-86
 17        android:debuggable="true"
-18        android:icon="@mipmap/ic_launcher"
-18-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:9:9-43
+18        android:icon="@drawable/logo2"
+18-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:9:9-39
 19        android:label="@string/app_name"
 19-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:10:9-41
 20        android:roundIcon="@mipmap/ic_launcher_round"
@@ -35,118 +35,138 @@
 22        android:testOnly="true"
 23        android:theme="@style/AppTheme" >
 23-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:13:9-40
-24        <activity android:name="com.example.fees2.UpdateFeesActivity" />
-24-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:14:9-65
-24-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:14:19-53
-25        <activity android:name="com.example.fees2.MainActivity" >
-25-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:9-21:20
-25-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:19-47
-26            <intent-filter>
-26-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:16:13-20:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:17-69
-27-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:19:17-77
-29-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:19:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity
-32-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:22:9-25:59
-33            android:name="com.example.fees2.CompleteProfileActivity"
-33-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:23:13-52
-34            android:label="@string/title_activity_complete_profile"
-34-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:24:13-68
-35            android:theme="@style/AppTheme.NoActionBar" />
-35-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:25:13-56
-36        <activity
-36-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:26:9-29:59
-37            android:name="com.example.fees2.LoginActivity"
-37-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:27:13-42
-38            android:label="@string/title_activity_login"
-38-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:28:13-57
-39            android:theme="@style/AppTheme.NoActionBar" />
-39-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:29:13-56
-40        <activity
-40-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:30:9-33:59
-41            android:name="com.example.fees2.TeacherActivity"
-41-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:31:13-44
-42            android:label="TeacherActiviy"
-42-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:32:13-43
-43            android:theme="@style/AppTheme.NoActionBar" />
-43-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:33:13-56
-44        <activity
-44-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:34:9-37:59
-45            android:name="com.example.fees2.StudentActivity"
-45-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:35:13-44
-46            android:label="StudentActiviy"
-46-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:36:13-43
-47            android:theme="@style/AppTheme.NoActionBar" />
-47-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:37:13-56
-48        <activity
-48-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:38:9-41:59
-49            android:name="com.example.fees2.RegisterActivity"
-49-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:39:13-45
-50            android:label="RegisterActivity"
-50-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:40:13-45
-51            android:theme="@style/AppTheme.NoActionBar" />
-51-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:41:13-56
-52        <activity
-52-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:24:9-31:50
-53            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-53-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:25:13-85
-54            android:excludeFromRecents="true"
-54-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:26:13-46
-55            android:exported="true"
-55-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:27:13-36
-56            android:launchMode="singleTask"
-56-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:28:13-44
-57            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-57-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:29:13-102
-58            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-58-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:30:13-72
-59
-60        <service
-60-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:33:9-39:19
-61            android:name="com.google.firebase.components.ComponentDiscoveryService"
-61-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:34:13-84
-62            android:exported="false" >
-62-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:35:13-37
-63            <meta-data
-63-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:36:13-38:85
-64                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-64-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:37:17-109
-65                android:value="com.google.firebase.components.ComponentRegistrar" />
-65-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:38:17-82
-66        </service>
-67
-68        <activity
-68-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-69            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-69-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-70            android:exported="false"
-70-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-71-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-72
-73        <provider
-73-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
-74            android:name="com.google.firebase.provider.FirebaseInitProvider"
-74-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
-75            android:authorities="com.example.fees2.firebaseinitprovider"
-75-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
-76            android:exported="false"
-76-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
-77            android:initOrder="100" />
-77-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
-78
-79        <meta-data
-79-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/9464ab46712489ff971708c95dbab035/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
-80            android:name="com.google.android.gms.version"
-80-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/9464ab46712489ff971708c95dbab035/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
-81            android:value="@integer/google_play_services_version" />
-81-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/9464ab46712489ff971708c95dbab035/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
-82    </application>
-83
-84</manifest>
+24        <activity android:name="com.example.fees2.UpdateProfile" />
+24-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:14:9-60
+24-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:14:19-48
+25        <activity android:name="com.example.fees2.ProfileActivity" />
+25-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:9-53
+25-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:15:19-50
+26        <activity android:name="com.example.fees2.Search2Activity" />
+26-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:16:9-53
+26-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:16:19-50
+27        <activity android:name="com.example.fees2.UpdateFeesActivity" />
+27-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:9-56
+27-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:17:19-53
+28        <activity android:name="com.example.fees2.MainActivity" >
+28-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:18:9-24:20
+28-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:18:19-47
+29            <intent-filter>
+29-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:19:13-23:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:20:17-69
+30-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:20:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:22:17-77
+32-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:22:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:25:9-28:59
+36            android:name="com.example.fees2.CompleteProfileActivity"
+36-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:26:13-52
+37            android:label="@string/title_activity_complete_profile"
+37-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:27:13-68
+38            android:theme="@style/AppTheme.NoActionBar" />
+38-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:28:13-56
+39        <activity
+39-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:29:9-32:59
+40            android:name="com.example.fees2.LoginActivity"
+40-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:30:13-42
+41            android:label="@string/title_activity_login"
+41-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:31:13-57
+42            android:theme="@style/AppTheme.NoActionBar" />
+42-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:32:13-56
+43        <activity
+43-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:33:9-36:59
+44            android:name="com.example.fees2.TeacherActivity"
+44-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:34:13-44
+45            android:label="TeacherActiviy"
+45-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:35:13-43
+46            android:theme="@style/AppTheme.NoActionBar" />
+46-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:36:13-56
+47        <activity
+47-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:37:9-40:59
+48            android:name="com.example.fees2.StudentActivity"
+48-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:38:13-44
+49            android:label="StudentActiviy"
+49-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:39:13-43
+50            android:theme="@style/AppTheme.NoActionBar" />
+50-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:40:13-56
+51        <activity
+51-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:41:9-44:59
+52            android:name="com.example.fees2.RegisterActivity"
+52-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:42:13-45
+53            android:label="RegisterActivity"
+53-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:43:13-45
+54            android:theme="@style/AppTheme.NoActionBar" />
+54-->/Users/ashishkarhade/AndroidStudioProjects/Fees2/app/src/main/AndroidManifest.xml:44:13-56
+55        <activity
+55-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:24:9-31:50
+56            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+56-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:25:13-85
+57            android:excludeFromRecents="true"
+57-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:26:13-46
+58            android:exported="true"
+58-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:27:13-36
+59            android:launchMode="singleTask"
+59-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:28:13-44
+60            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+60-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:29:13-102
+61            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+61-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:30:13-72
+62
+63        <service
+63-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:33:9-39:19
+64            android:name="com.google.firebase.components.ComponentDiscoveryService"
+64-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:34:13-84
+65            android:exported="false" >
+65-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:35:13-37
+66            <meta-data
+66-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:36:13-38:85
+67                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+67-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:37:17-109
+68                android:value="com.google.firebase.components.ComponentRegistrar" />
+68-->[com.google.firebase:firebase-auth:16.0.5] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/6039fdbafb6682ab6de2fbfeb8990c4f/jetified-firebase-auth-16.0.5/AndroidManifest.xml:38:17-82
+69        </service>
+70
+71        <activity
+71-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+72            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+72-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+73            android:exported="false"
+73-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+74            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+74-->[com.google.android.gms:play-services-base:16.0.1] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/41d81f9c5e6e3e6fb2c95f33011e2fbc/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+75
+76        <provider
+76-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
+77            android:name="com.google.firebase.provider.FirebaseInitProvider"
+77-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
+78            android:authorities="com.example.fees2.firebaseinitprovider"
+78-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
+79            android:exported="false"
+79-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
+80            android:initOrder="100" />
+80-->[com.google.firebase:firebase-common:16.0.3] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/a9048e5389f69321c2055bc707b1a6a9/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
+81
+82        <meta-data
+82-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/9464ab46712489ff971708c95dbab035/jetified-play-services-basement-16.1.0/AndroidManifest.xml:23:9-25:69
+83            android:name="com.google.android.gms.version"
+83-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/9464ab46712489ff971708c95dbab035/jetified-play-services-basement-16.1.0/AndroidManifest.xml:24:13-58
+84            android:value="@integer/google_play_services_version" />
+84-->[com.google.android.gms:play-services-basement:16.1.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/9464ab46712489ff971708c95dbab035/jetified-play-services-basement-16.1.0/AndroidManifest.xml:25:13-66
+85
+86        <provider
+86-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/28573f39daf86dfd120980829755ad4b/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+87            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+87-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/28573f39daf86dfd120980829755ad4b/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+88            android:authorities="com.example.fees2.lifecycle-process"
+88-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/28573f39daf86dfd120980829755ad4b/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+89            android:exported="false"
+89-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/28573f39daf86dfd120980829755ad4b/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+90            android:multiprocess="true" />
+90-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/ashishkarhade/.gradle/caches/transforms-2/files-2.1/28573f39daf86dfd120980829755ad4b/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+91    </application>
+92
+93</manifest>

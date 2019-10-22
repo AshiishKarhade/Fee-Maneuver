@@ -21,6 +21,7 @@ public class TeacherActivity extends AppCompatActivity {
 
         Button updateFees = findViewById(R.id.teacher_updatebtn);
         Button signout  = findViewById(R.id.teacher_signout);
+        Button searchBtn = findViewById(R.id.teacher_searchbtn);
 
 
         updateFees.setOnClickListener(new View.OnClickListener() {
@@ -31,15 +32,19 @@ public class TeacherActivity extends AppCompatActivity {
             }
         });
 
-
+        searchBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TeacherActivity.this, Search2Activity.class));
+            }
+        });
 
 
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mAuth.getInstance().signOut();
-
-                startActivity(new Intent(TeacherActivity.this, LoginActivity.class));
+                startActivity(new Intent(TeacherActivity.this, MainActivity.class));
                 finish();
             }
         });

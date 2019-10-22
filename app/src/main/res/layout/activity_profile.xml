@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/pro_rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.349"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Name:"
+            android:id="@+id/nameee"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_below="@id/nameee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="YOUR NAME"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/profile_name"
+            android:text="Net Fee:"
+            android:id="@+id/pro_ntfeee"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/profile_netfee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_ntfeee"
+            android:hint="NETT.FEE"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Remaining Fee:"
+            android:id="@+id/pro_rmfeee"
+            android:layout_below="@id/profile_netfee"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/profile_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pro_rmfeee"
+            android:hint="REMAINING FEE"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="24dp"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="381dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/profile_update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_remaining"
+            android:layout_marginTop="30dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

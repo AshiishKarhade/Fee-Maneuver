@@ -1,5 +1,6 @@
 package com.example.fees2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,9 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class UpdateFeesActivity extends AppCompatActivity {
 
@@ -32,18 +37,29 @@ public class UpdateFeesActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int general = Integer.parseInt(generalFees.getText().toString());
-                int oms = Integer.parseInt(omsFees.getText().toString());
-                int obc = Integer.parseInt(obcFees.getText().toString());
-                int sc = Integer.parseInt(scFees.getText().toString());
-                int st = Integer.parseInt(stFees.getText().toString());
+                String gf = generalFees.getText().toString();
+                String omf = omsFees.getText().toString();
+                String obf = obcFees.getText().toString();
+                String scf = scFees.getText().toString();
+                String stf = stFees.getText().toString();
 
-                Fees fees = new Fees(general, oms, obc, sc, st);
+                if(gf.isEmpty() || omf.isEmpty() || obf.isEmpty() || scf.isEmpty() || stf.isEmpty()){
+                    Toast.makeText(UpdateFeesActivity.this, "One or more fields are empty", Toast.LENGTH_SHORT).show();
+                }
+                else{
 
-                myRef.setValue(fees);
+                    int general = Integer.parseInt(generalFees.getText().toString());
+                    int oms = Integer.parseInt(omsFees.getText().toString());
+                    int obc = Integer.parseInt(obcFees.getText().toString());
+                    int sc = Integer.parseInt(scFees.getText().toString());
+                    int st = Integer.parseInt(stFees.getText().toString());
 
-                updateView();
+                    Fees fees = new Fees(general, oms, obc, sc, st);
 
+                    myRef.setValue(fees);
+
+                    updateView();
+                }
             }
         });
     }

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,6 +25,7 @@ import org.w3c.dom.Text;
 public class StudentActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     private FirebaseUser mUser;
+    String casteName;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,7 @@ public class StudentActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final String userID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference myRef = database.getReference("student").child(userID);
+        DatabaseReference feeRef = database.getReference("fees");
 
         final TextView stuName = findViewById(R.id.student_name);
         final TextView stuNetfee = findViewById(R.id.ntf);
@@ -51,13 +54,6 @@ public class StudentActivity extends AppCompatActivity {
                     stuNetfee.setText(netfee);
                     stuRemfee.setText(remfee);
 
-                 //   Log.d("Name", name);
-
-                Toast.makeText(StudentActivity.this, "Updated....", Toast.LENGTH_SHORT).show();
-                Toast.makeText(StudentActivity.this,userID , Toast.LENGTH_LONG).show();
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-
             }
 
             @Override
@@ -67,11 +63,12 @@ public class StudentActivity extends AppCompatActivity {
         });
 
 
+
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mAuth.getInstance().signOut();
-                startActivity(new Intent(StudentActivity.this, LoginActivity.class));
+                startActivity(new Intent(StudentActivity.this, MainActivity.class));
                 finish();
             }
         });
